@@ -21,7 +21,7 @@ def mock_ai_analysis(clause):
 
 # Sidebar
 st.sidebar.header("Clause Guardian Controls")
-risk_appetite = st.sidebar.slider("Risk Appetite", 1, 3, 2, format="Low/Medium/High", value=2)
+risk_appetite =st.sidebar.selectbox("Risk Appetite", 1, 3, 2, format="Low/Medium/High", value=2)
 st.sidebar.metric("Documents Scanned Today", value=14)
 st.sidebar.metric("Risk Averted", value="$2.5m")
 
